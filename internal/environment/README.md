@@ -15,7 +15,7 @@ new [branch-name]: create a branch
 
 sw [branch-name]: switch to the branch
 
-rename (optional)[oldname] [newname]: change the branch name to newname. If you're already on the old branch, omit oldname
+rename [oldname] [newname]: rename branch
 
 del [branch-name]: delete the branch
 

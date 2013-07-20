@@ -548,7 +548,10 @@ alias com="git commit"
 alias up="git rebase master"
 alias acom="git commit --amend"
 alias st="git status"
-alias rename="git branch -m"
+myrename() {
+  git branch -m $1 $2 && git branch
+}
+alias rename=myrename
 
 mydel() {
   git branch -d $1 && git branch 
