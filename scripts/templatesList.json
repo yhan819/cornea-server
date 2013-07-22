@@ -1,4 +1,3 @@
 [
-  "BodyTemplate.handlebars",
-  "SourceListTemplate.handlebars"
+  "ApplicationTemplate.handlebars"
 ]

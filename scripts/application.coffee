@@ -1,6 +1,4 @@
-
-
-template = Handlebars.templates["BodyTemplate"]
-context = {title : "Cornea Reader"}
+template = Handlebars.templates["ApplicationTemplate"]
+context = {}
 html = template(context)
 $('body').html(html)

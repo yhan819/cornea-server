@@ -2,11 +2,9 @@
 (function() {
   var context, html, template;
 
-  template = Handlebars.templates["BodyTemplate"];
+  template = Handlebars.templates["ApplicationTemplate"];
 
-  context = {
-    title: "Cornea Reader"
-  };
+  context = {};
 
   html = template(context);
 
