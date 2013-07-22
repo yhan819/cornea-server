@@ -1,4 +1,20 @@
 #!/usr/bin/env python
+
+#
+# Tasks
+# 1. .coffee -> .js
+# 2. .handlebars -> .js
+# 3. .less -> .css
+# 4. Launch the application on the browser
+# 
+# Source files are in the scripts directory.
+# Outputs are in static directory.
+#
+# All contents within the static directory probably do not have to be modified.
+# You only need to change the contents of scripts directory.
+#
+#
+
 import os, sys, json, webbrowser
 
 def compileCoffee():
