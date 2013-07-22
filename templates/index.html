@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="../static/lib/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet/less" type="text/css" href="../static/less/styles.less" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/styles/main.css" />
 
   <!-- IMPORT LIBRARY -->
   <script src="../static/lib/js/app.js" type="text/javascript"></script>
@@ -17,7 +19,7 @@
   <script src="http://fgnass.github.io/spin.js/dist/spin.min.js"></script>
   <script src="http://fgnass.github.io/spin.js/jquery.spin.js"></script>
 
-  <!-- LESS SETUP -->
+  <!-- LESS SETUP --> <!-- May not be necessary -->
   <script type="text/javascript">
     less = {
         env: "development", // or "production"
@@ -36,14 +38,14 @@
   </script>
 
   <!-- HANDLEBARS -->
-  <script src="../static/_handlebars/BodyTemplate.js"></script>
-  <script src="../static/_handlebars/SourceListTemplate.js"></script>
+  <script src="../static/templates/BodyTemplate.js"></script>
+  <script src="../static/templates/SourceListTemplate.js"></script>
 
 </head>
 
 <body>
-  <!-- Application script -->
-  <script src="../static/_coffee/application/application.js" type="text/javascript"></script>
+  <!-- Run the application -->
+  <script src="../static/js/application/application.js" type="text/javascript"></script>
 </body>
 
 </html>

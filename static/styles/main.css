@@ -1,0 +1,18 @@
+body {
+  padding: 10px 40px 0px 40px;
+}
+.application {
+  width: 1000px;
+  margin: 0px auto;
+}
+.application .top-window .top-window-label {
+  text-align: center;
+}
+.application .sources-window .sources-window-label {
+  text-align: center;
+}
+.application .sources-window .sources-wrapper ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
