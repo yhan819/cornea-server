@@ -38,3 +38,5 @@ hist: show 10 most recent commits in a pretty way
 pull: git pull origin
 
 push: git push origin HEAD
+
+git checkout -- . : remove all unstaged changes
