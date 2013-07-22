@@ -18,7 +18,7 @@
 import os, sys, json, webbrowser
 
 def compileCoffee():
-  command = "coffee --compile --output static/js/ scripts/"
+  command = "coffee --watch --compile --output static/js/ scripts/"
   os.system(command)
 
 def compileHandlebars():

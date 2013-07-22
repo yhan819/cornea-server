@@ -1,4 +1,7 @@
 template = Handlebars.templates["ApplicationTemplate"]
-context = {}
-html = template(context)
-$('body').html(html)
+
+html = template()
+$(document).ready(
+    () ->
+      $('body').html(html)
+  )
