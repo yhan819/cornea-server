@@ -3,9 +3,7 @@
 Rename <code>zshrc</code> to <code>.zshrc</code> and put it in your home
 directory
 
-Note: Currently, zsh doesn't show git prompt because of some alias issue. If you want to try, do the below
-
-Thanks to (<https://github.com/olivierverdier/zsh-git-prompt>).
+Make zsh show the git prompt (thanks to (<https://github.com/olivierverdier/zsh-git-prompt>))
 
 <code>mkdir ~/.zsh</code>
 
@@ -13,11 +11,14 @@ Thanks to (<https://github.com/olivierverdier/zsh-git-prompt>).
 
 Copy <code>gitstatus.py</code> into <code>~/.zsh/git-prompt/</code>
 
-Go to the last several lines of <code>~/.zshrc</code>. Choose style 3 instead of 1.
-
-The last line of <code>~/.zsh/zshrc.sh</code> can be either true or false. Setting it to false will turn off the cache.
+Also copy <code>zshrc.sh</code> into <code>~/.zsh/</code>
 
 Open <code>screenshot.png</code> to see how it looks :)
+
+### Trouble-shooting ###
+If you want to turn off the git prompt, open <code>~/.zshrc</code> and go to the bottom. Then choose style 1 for <code>PROMPT</code> instead of 3.
+
+Also, you can toggle the cache for git prompt by opening <code>~/.zsh/zshrc.sh</code> and changing the variable <code>ZSH...NOCACHE</code> at the bottom.
 
 ## Commands ##
 ### Shell Commands ###

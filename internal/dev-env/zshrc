@@ -584,8 +584,8 @@ alias rm="rm -i"
 
 source ~/.zsh/zshrc.sh
 # 1. orig style
-PROMPT='%{$fg[green]%}%n%{$reset_color%}@%{$fg[cyan]%}%m %{$fg[blue]%}%* %{$fg[red]%}%~ %{$reset_color%}%# '
+# PROMPT='%{$fg[green]%}%n%{$reset_color%}@%{$fg[cyan]%}%m %{$fg[blue]%}%* %{$fg[red]%}%~ %{$reset_color%}%# '
 # 2. show git style (thanks to https://github.com/olivierverdier/zsh-git-prompt)
 # PROMPT="%B%m%~%b$(git_super_status) %# "
 # 3. Combined!
-# PROMPT='%{$fg[green]%}%n%{$reset_color%}@%{$fg[cyan]%}%m %{$fg[blue]%}%* %{$fg[red]%}%~%{$reset_color%}$(git_super_status) %# '
+PROMPT='%{$fg[green]%}%n%{$reset_color%}@%{$fg[cyan]%}%m %{$fg[blue]%}%* %{$fg[red]%}%~%{$reset_color%}$(git_super_status) %# '
