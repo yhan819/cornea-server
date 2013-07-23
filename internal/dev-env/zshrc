@@ -213,7 +213,7 @@ fignore=(.o .c~ .old .pro) # ignores these file types when doing file completion
 # * PS4 is for execution trace.
 # * See http://zsh.sourceforge.net/Doc/Release/zsh_12.html#SEC40 for details on
 #   prompt expansion.
-PROMPT='%B%n@%m%b[%*]%U%~%u%# ' # <b>name@server</b>[time]<u>path</u>$
+# PROMPT='%B%n@%m%b[%*]%U%~%u%# ' # <b>name@server</b>[time]<u>path</u>$
                                 # (ends with # in su mode).
 # PROMPT2=
 # PROMPT3=
@@ -518,7 +518,9 @@ umask 022
 # Below: Added by James Nam
 ################################################################################
 
-# shell
+#################
+#### shell
+#################
 mycd() {
   cd $1 && ls
 }
@@ -527,7 +529,17 @@ alias cd=mycd
 alias ..="cd .."
 alias lsa="ls -a"
 
-# git
+mygrep() {
+  grep --color -riIl $1 *
+}
+
+alias mgrep=mygrep
+
+alias mfind="find . -iname"
+
+#################
+#### git
+#################
 mynew() {
   git checkout -b $1 && git branch
 }
@@ -545,7 +557,7 @@ alias sw=mysw
 
 alias add="git add"
 alias com="git commit"
-alias up="git rebase master"
+alias up="git rebase"
 alias acom="git commit --amend"
 alias st="git status"
 myrename() {
@@ -565,3 +577,16 @@ alias del=mydel
 alias Del=myDel
 
 alias rm="rm -i"
+
+#################
+#### show git prompt in zsh
+#################
+
+source ~/.zsh/zshrc.sh
+# 1. orig style
+# PROMPT='%{$fg[green]%}%n%{$reset_color%}@%{$fg[cyan]%}%m %{$fg[blue]%}%* %{$fg[red]%}%~ %{$reset_color%}%# '
+# 2. show git style (thanks to https://github.com/olivierverdier/zsh-git-prompt)
+# PROMPT="%B%m%~%b$(git_super_status) %# "
+
+# 3. Combined!
+PROMPT='%{$fg[green]%}%n%{$reset_color%}@%{$fg[cyan]%}%m %{$fg[blue]%}%* %{$fg[red]%}%~%{$reset_color%}$(git_super_status) %# '

@@ -1,13 +1,34 @@
-### How to use zshrc ###
+## How to install zshrc ##
 
 Rename <code>zshrc</code> to <code>.zshrc</code> and put it in your home
 directory
 
+Below: zsh shows git prompt thanks to (<https://github.com/olivierverdier/zsh-git-prompt>)
+
+Do:
+
+<code>mkdir ~/.zsh</code>
+
+<code>mkdir ~/.zsh/git-prompt</code>
+
+Copy <code>gitstatus.py</code> into <code>~/.zsh/git-prompt/</code>
+
+Open <code>screenshot.png</code> to see how it looks :)
+
+## Commands ##
 ### Shell Commands ###
 
 <code>.. = "cd .."</code>
 
 <code>lsa = "ls -a" </code>
+
+Recursive grep, ignoring binary files and cases. Also colors the matched term.
+
+<code>mgrep [phrase]</code> (e.g., <code>mgrep "stanford university"</code>)
+
+Recursive find. Ignores case and lists filenames. 
+
+<code>mfind [filename]</code> (e.g., <code>mfind "*.pdf"</code>)
 
 ### Git commands ###
 
@@ -21,7 +42,7 @@ del [branch-name]: delete the branch
 
 Del [branch-name]: force delete the branch
 
-up : rebase onto master
+up [branch-name]: rebase onto that branch
 
 add [path]: git add
 
