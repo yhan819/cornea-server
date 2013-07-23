@@ -34,3 +34,5 @@ Cornea Reader
 5. install required packages with pip
 
     <code>pip install -r requirements.txt</code>
+
+6. Go to internal/dev-env to set up the zsh environment (screenshot is there). It shows your git branch status as well! :)
