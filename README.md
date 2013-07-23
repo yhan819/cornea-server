@@ -6,7 +6,7 @@ Cornea Reader
 (Currently, this application uses coffeescript, handlebars, and less. You may need to install some or all of these libraries to be able to run the application, even locally)
 
 1. Activate the environment: <code>source ~/DIRECTORYPATH/bin/activate</code>
-2. Run the app: <code>python app.py</code>
+2. Run the app: <code>python run.py</code>
 3. Each time you open the application, run <code>python compiler.py</code>, then REFRESH! (necessary)
 
 ### Links ###

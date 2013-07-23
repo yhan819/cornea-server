@@ -18,7 +18,7 @@
 import os, sys, json, webbrowser
 
 def compileCoffee():
-  command = "coffee --watch --compile --output static/js/ scripts/"
+  command = "coffee --watch --compile --output cornea/static/js/ scripts/"
   os.system(command)
 
 def compileHandlebars():
@@ -27,7 +27,7 @@ def compileHandlebars():
   data = json.loads(jsonData)
 
   origPathPrefix = "scripts/templates/"
-  newPathPrefix = "static/templates/"
+  newPathPrefix = "cornea/static/templates/"
 
   for origName in data:
     newName = ".".join(origName.split(".")[:-1]) + ".js"
@@ -42,7 +42,7 @@ def compileLess():
   data = json.loads(jsonData)
 
   origPathPrefix = "scripts/styles/"
-  newPathPrefix = "static/styles/"
+  newPathPrefix = "cornea/static/styles/"
 
   for origName in data:
     newName = ".".join(origName.split(".")[:-1]) + ".css"
