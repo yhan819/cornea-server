@@ -1,6 +1,7 @@
 # Project
 *~
 *DS_Store
+cornea.db
 
 *.py[cod]
 *.swp
