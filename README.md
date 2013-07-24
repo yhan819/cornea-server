@@ -11,6 +11,8 @@ Cornea Reader
 
 ### Links ###
 
+- <a href="https://github.com/namejames91/reader2" target="_blank">James' Reader Repository</a>
+
 - <a href="https://docs.google.com/document/d/1beOk0C9akyP1IJbl2NXgXpm7TkNPocqTxNZEK1QNKyc/edit" target="_blank">TODO list</a>
 
 - <a href="http://github-markdown-preview.heroku.com/" target="_blank">Markdown Preview</a>
