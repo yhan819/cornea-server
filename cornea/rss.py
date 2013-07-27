@@ -1,8 +1,9 @@
-from cornea import app
+from cornea import app, crossdomain
 import feedparser
 import json
 
 @app.route('/get_chosun')
+@crossdomain(origin='*')
 def get_chosun():
     d = feedparser.parse('http://myhome.chosun.com/rss/www_section_rss.xml')
     articles = parse_items(d)
