@@ -5,6 +5,7 @@ class Article(db.Model):
     publisher = db.Column(db.String(64))
     time = db.Column(db.DateTime)
     data = db.Column(db.String, nullable=True, default='')
+    uploaded = db.Column(db.Integer)
 
     def __init__(self, publisher, time, data):
         self.publisher = publisher
