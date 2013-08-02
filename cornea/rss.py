@@ -9,6 +9,27 @@ def get_chosun():
     articles = parse_items(d)
     return json.dumps({"articles": articles})
 
+@app.route('/get_joongang')
+@crossdomain(origin='*')
+def get_joongang():
+    d = feedparser.parse('http://rss.joins.com/joins_homenews_list.xml')
+    articles = parse_items(d)
+    return json.dumps({"articles": articles})
+
+@app.route('/get_donga')
+@crossdomain(origin='*')
+def get_donga():
+    d = feedparser.parse('http://rss.donga.com/total.xml')
+    articles = parse_items(d)
+    return json.dumps({"articles": articles})
+
+@app.route('/get_yonhap')
+@crossdomain(origin='*')
+def get_yonhap():
+    d = feedparser.parse('http://www.yonhapnews.co.kr/RSS/province.xml')
+    articles = parse_items(d)
+    return json.dumps({"articles": articles})
+
 def parse_items(d):
     result = []
     for a in d["items"]:
