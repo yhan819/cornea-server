@@ -39,10 +39,10 @@ Cornea Reader
 
 6. Go to internal/dev-env to set up the zsh environment (screenshot is there). It shows your git branch status as well! :)
 
-7. SETUP DB, if cornea.db doesn't exist in your local repo, create the local db first
+8. SETUP DB, if cornea.db doesn't exist in your local repo, create the local db first
 
     <code>python db_create.py</code>
 
-8. if you have cornea.db, upgrade to the latest db
+9. upgrade to the latest db
 
     <code>python db_upgrade.py</code>

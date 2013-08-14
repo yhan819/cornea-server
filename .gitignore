@@ -2,7 +2,7 @@
 *~
 *DS_Store
 cornea.db
-tmp/*
+tmp/*.log
 
 *.py[cod]
 *.swp
