@@ -18,6 +18,7 @@ def get_all():
     for s in sources:
         d = feedparser.parse(sources[s])
         articles[s] = parse_items(d, s)
+        app.logger.info("parsing source: " + s)
     return json.dumps(articles)
 
 @app.route('/get_chosun')
